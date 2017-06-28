@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ror3Demo</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+  <%= render 'layouts/bootstrap' %>
+  </head>
+
+  <body>
+  <%= render 'layouts/navbar' %>
+<!--   <ol class="breadcrumb">
+      <li class="<%= 'active' if params[:action] == 'index' %>"><%= link_to 'Home', root_path %></li>
+      <li class="<%= 'active' if params[:action] == 'test' %>"><%= link_to 'Test', test_path %></li>
+      <li class="<%= 'active' if params[:action] == 'products' %>"><%= link_to 'Products', products_path %></li>
+      <li class="<%= 'active' if params[:action] == 'about' %>", ><%= link_to 'About', about_path %></li>
+    </ol> -->
+
+    <%= yield %>
+  </body>
+</html>

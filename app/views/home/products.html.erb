@@ -1,0 +1,21 @@
+<h1>All products</h1>
+<!-- <h2>Count: <%= @products.count %></h2> -->
+<br>
+<!-- <h3>Product details</h3> -->
+
+
+<table class ="table table-striped table-hover">
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Price</th>
+    </tr>
+  </thead>
+  <% @products.each do |product| %>
+      <tr>
+        <td><%= product.id %></td>
+        <td><%= product.name %></td>
+        <td><%= product.price %></td>
+      </tr>
+  <% end %>
