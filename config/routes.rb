@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   # get '/test' => 'home#test', as: 'nesto'
   get '/test' => 'home#test'
   get '/products' => 'home#products'
-  get '/about' => 'home#about'
+  get '/about' => 'about#about'
 end
