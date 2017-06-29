@@ -11,14 +11,16 @@
   </head>
 
   <body>
-  <%= render 'layouts/navbar' %>
+    <div class= "container">
+    <%= render 'layouts/navbar' %>
 <!--   <ol class="breadcrumb">
       <li class="<%= 'active' if params[:action] == 'index' %>"><%= link_to 'Home', root_path %></li>
       <li class="<%= 'active' if params[:action] == 'test' %>"><%= link_to 'Test', test_path %></li>
       <li class="<%= 'active' if params[:action] == 'products' %>"><%= link_to 'Products', products_path %></li>
       <li class="<%= 'active' if params[:action] == 'about' %>", ><%= link_to 'About', about_path %></li>
     </ol> -->
-
+    
     <%= yield %>
+    </div>
   </body>
 </html>
