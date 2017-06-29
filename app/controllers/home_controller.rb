@@ -10,7 +10,7 @@ class HomeController < ApplicationController
   end
 
   def products
-  @products = Product.order("#{sort_column} #{sort_direction}")
+  @products = Product.order(price: :desc)
     # @products = Product.all
   end
 
